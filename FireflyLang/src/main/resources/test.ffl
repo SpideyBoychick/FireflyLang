@@ -1,0 +1,21 @@
+main: = {
+    int a = 0
+    int j = 5
+    j++
+
+
+
+
+
+
+    if(a > j) {
+        print(a)
+    }
+    else{
+        throw new Exception("Ошибка!") // Комментарий 1
+        int c = 12.12; /* Комментарий
+        номер
+        3
+        */
+    }
+}

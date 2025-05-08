@@ -38,6 +38,9 @@ public class Lexer {
         keywords.put("true", TokenType.TRUE);
         keywords.put("false", TokenType.FALSE);
         keywords.put("void", TokenType.VOID);
+        keywords.put("new", TokenType.NEW);
+        keywords.put("float", TokenType.FLOAT);
+        keywords.put("double", TokenType.DOUBLE);
         symbols.put("+", TokenType.PLUS);
         symbols.put("-", TokenType.MINUS);
         symbols.put("*", TokenType.MUL);
@@ -81,7 +84,6 @@ public class Lexer {
         List<Token> res = new ArrayList<>();
 
         while(get(0) != '\0'){
-            System.out.println(get(0));
             if(get(0) == '\n'){
                 line++;
                 pos++;

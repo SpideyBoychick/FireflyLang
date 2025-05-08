@@ -8,6 +8,8 @@ public enum TokenType {
     INT,
     LONG,
     STRING,
+    FLOAT,
+    DOUBLE,
     CHAR,
     BOOL,
     TRUE,
@@ -34,6 +36,7 @@ public enum TokenType {
     CATCH,
     GET,
     SET,
+    NEW,
 
     //Symbols
     PLUS,// +
